@@ -75,9 +75,6 @@ $("#container").append("<tr class='title' onclick='showhide(this)'><td  style='b
 function displayinside(object,randomitem){
 object.text = object.text + "<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h1>"+randomitem.name+"</h1></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+randomitem.text+"</p></td></tr>"
 }
-function showoverlay(){
-$("#overlay").show();
-}
 //XML Tag Handler
 function myFunction(xml) {
     var xmlDoc = xml.responseXML;
@@ -318,24 +315,3 @@ change: function(event,data){
 	}
 	display()
 }})*/
-$( function() {
-    $( "#menu" ).menu();
-  } );
-function showmenu(){
-	$("#menu").toggle()
-}
-function hidemenu(){
-	$("#menu").hide()
-}
-$(document).click( function() {
-    hidemenu();
-});
-$("#menu").click( function(e) {
-    e.stopPropagation(); // this stops the event from bubbling up to the body
-});
-$("#elipse").click(function(e){
-	e.stopPropagation();
-});
-showmenu()
-$("#arrayselect").hide()
-$("#overlay").hide()
