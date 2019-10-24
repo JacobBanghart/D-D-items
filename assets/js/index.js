@@ -37,6 +37,9 @@ xhttp.open("GET", "valueableitems.xml", false);
 xhttp.send()
 
 //Filter Function
+$("#filter").keyup(()=>{
+    filter();
+})
 function filter(){
 var input, filter, table, tr, td, i;
   input = document.getElementById("filter");
