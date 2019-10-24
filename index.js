@@ -254,7 +254,7 @@ function npc(name, description, itemtypearray){
 //End Constructors//Menu Functions
 $("#item").change(()=>{
     $("select option:selected").each((i, v)=>{
-        console.log(v)
+        console.log(v.value)
 })
 })
 
