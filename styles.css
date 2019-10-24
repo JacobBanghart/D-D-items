@@ -1,0 +1,16 @@
+tbody tr {
+  display: none;
+}
+
+tr.title {
+  display: table-row;
+}
+
+tr.npc {
+  display: table-row;
+}
+
+tr.open {
+  display: table-row;
+}
+
