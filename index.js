@@ -41,7 +41,7 @@ function filter(){
 var input, filter, table, tr, td, i;
   input = document.getElementById("filter");
   filter = input.value.toUpperCase();
-  table = document.getElementById("container");
+  table = document.getElementById("tablebody");
   tr = table.getElementsByTagName("tr");
   // Loop through all table rows, and hide those who don't match the search query
   for (i = 0; i < tr.length; i++) {
@@ -69,10 +69,10 @@ xhttp.send()
 var disp = [allitems];
 //Display Function
 function display(){
-$("#container").empty()
+$("#tablebody").empty()
 	    for(i=0;i<disp.length;i++){
 	    for(x=1;x<disp[i].length;x++){
-$("#container").append("<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h1>"+disp[i][x].name+"</h1></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+disp[i][x].text+"</p></td></tr>")
+$("#tablebody").append("<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h1>"+disp[i][x].name+"</h1></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+disp[i][x].text+"</p></td></tr>")
 }
 }
 }
