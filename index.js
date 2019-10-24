@@ -254,14 +254,8 @@ function npc(name, description, itemtypearray){
 //End Constructors//Menu Functions
 $("#item").change(()=>{
     $("select option:selected").each((i, v)=>{
-        console.log(v.value)
-})
-})
-
-/*$("#item").selectmenu({
-change: function(event,data){
-		disp = []
-	switch (data.item.value){
+        disp = []
+        switch (v.value){
 	case "all":
 		disp.push(allitems)
 	break;
@@ -318,4 +312,6 @@ change: function(event,data){
 	break;
 	}
 	display()
-}})*/
+})
+})
+
