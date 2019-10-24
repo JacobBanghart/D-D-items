@@ -251,7 +251,13 @@ function npc(name, description, itemtypearray){
 	this.gennewitems()
 }
 //End Constructors//Menu Functions
-$("#item").selectmenu({
+$("#item").change(()=>{
+    $("select option:selected").each((i, v)=>{
+        console.log("Index: "+i+" Value: "+v)
+})
+})
+
+/*$("#item").selectmenu({
 change: function(event,data){
 		disp = []
 	switch (data.item.value){
@@ -311,7 +317,7 @@ change: function(event,data){
 	break;
 	}
 	display()
-}})
+}})*/
 $( function() {
     $( "#menu" ).menu();
   } );
