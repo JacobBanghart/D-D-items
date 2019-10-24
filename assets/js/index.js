@@ -72,12 +72,12 @@ function display(){
 $("#tablebody").empty()
 	    for(i=0;i<disp.length;i++){
 	    for(x=1;x<disp[i].length;x++){
-$("#tablebody").append("<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h1>"+disp[i][x].name+"</h1></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+disp[i][x].text+"</p></td></tr>")
+$("#tablebody").append("<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h3>"+disp[i][x].name+"</h3></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+disp[i][x].weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+disp[i][x].text+"</p></td></tr>")
 }
 }
 }
 function displayinside(object,randomitem){
-object.text = object.text + "<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h1>"+randomitem.name+"</h1></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+randomitem.text+"</p></td></tr>"
+object.text = object.text + "<tr class='title' onclick='showhide(this)'><td  style='border:3px solid white; border-radius:10px;'><h3>"+randomitem.name+"</h3></td><td class='type'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.type+"</p></td><td class='weight'  style='border:3px solid white; border-radius:10px;'><p>"+randomitem.weight+"</p></td></tr><tr class='information'><td colspan='3' style='border:2px solid gray;border-radius:10px'><p>"+randomitem.text+"</p></td></tr>"
 }
 //XML Tag Handler
 function myFunction(xml) {
