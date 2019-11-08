@@ -1,7 +1,7 @@
 var allitems = ["all"];
 var currencys = ["currency"];
 var ammos = ["ammo"];
-var armour = ["armour"];
+var armor = ["armor"];
 var melee = ["melee"];
 var gears = ["gear"];
 var ranged = ["ranged"];
@@ -189,7 +189,7 @@ if(this.type != ""){
 		case "MA":
 		case "HA":
 		case "LA":
-			armour.push(this)
+			armor.push(this)
 		break;
 		case "M":
 			melee.push(this);
@@ -281,8 +281,8 @@ $("#item").change(()=>{
 	case "ammo":
 		disp.push(ammos)
 	break;
-	case "armour":
-		disp.push(armour)
+	case "armor":
+		disp.push(armor)
 	break;
 	case "melee":
 		disp.push(melee)
