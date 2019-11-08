@@ -55,8 +55,9 @@ var input, filter, table, tr, td, i;
       } else {
         tr[i].style.display = "none";
       }
+        $(tr).nextUntil(".title").toggleClass("open");
     } 
-}
+  }
 }
 //Show Hide Function
 function showhide(item){
@@ -109,6 +110,9 @@ this.dmg1 = ""
 this.dmg2 = ""
 this.property = ""
 this.range = ""
+this.rarity = ""
+this.magic = ""
+this.detail = ""
 for(p=0;p<xmltag.children.length;p++){
 var inner = xmltag.children[p].innerHTML
 	switch(xmltag.children[p].tagName){
@@ -158,6 +162,15 @@ var inner = xmltag.children[p].innerHTML
 		case "dmg2":
 			this.dmg2 = this.dmg2 + inner
 		break;
+        case "rarity":
+            this.rarity = this.rarity + inner
+        break;
+        case "magic":
+            this.magic = this.magic + inner
+        break;
+        case "detail":
+            this.detail = this.detail + inner
+        break;
 		default:
 			console.log(xmltag.children[p].tagName)
 		break;
