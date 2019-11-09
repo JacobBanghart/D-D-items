@@ -87,7 +87,7 @@ object.text = object.text + "<tr class='title' onclick='showhide(this)'><td  sty
 }
 //XML Tag Handler
 function myFunction(xml) {
-    var xmlDoc = xml.responseXML;
+    //var xmlDoc = xml.responseXML;
     var items = xmlDoc.getElementsByTagName("item")
     for(i=0;i<items.length;i++){
      new item(items[i])
@@ -332,4 +332,4 @@ $("#item").change(()=>{
 	display()
 })
 })
-var data = fetch("magic.xml").then(response => response.text()).then(str=>(new window.DOMParser()).parseFromString(str, "text/xml"))
+var data = fetch("magic.xml").then(response => response.text()).then(str=>(new window.DOMParser()).parseFromString(str, "text/xml")).then(data => myFunction(data))
