@@ -35,11 +35,13 @@ xhttp.open("GET", "mundane.xml", false);
 xhttp.send()
 xhttp.open("GET", "valueableitems.xml", false);
 xhttp.send()*/
-let responce = fetch("magic.xml")
-myFunction(responce)
+let responce = fetch("magic.xml").
+responce.then((value)={
+    myFunction(value)
 disp = []
 disp.push(allitems)
 display();
+})
 //Filter Function
 $("#filter").keyup(()=>{
     filter();
