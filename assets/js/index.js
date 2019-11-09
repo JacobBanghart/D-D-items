@@ -29,13 +29,17 @@ xhttp.onreadystatechange = function() {
     display()
     }
 };
-xhttp.open("GET", "magic.xml", false);
+/*xhttp.open("GET", "magic.xml", false);
 xhttp.send()
 xhttp.open("GET", "mundane.xml", false);
 xhttp.send()
 xhttp.open("GET", "valueableitems.xml", false);
-xhttp.send()
-
+xhttp.send()*/
+let responce = await fetch("magic.xml")
+myFunction(responce)
+disp = []
+disp.push(allitems)
+display();
 //Filter Function
 $("#filter").keyup(()=>{
     filter();
@@ -55,6 +59,7 @@ var input, filter, table, tr, td, i;
       } else {
         tr[i].style.display = "none";
       }
+        //collapse item descriptions of open items
         $(tr).nextUntil(".title").toggleClass("open");
     } 
   }
