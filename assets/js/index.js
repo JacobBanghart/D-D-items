@@ -20,6 +20,7 @@ var npcs = ["npcs"];
 var xhttp = new XMLHttpRequest();
 var isnewnpc = false
 var npcholder = null;
+var disp = [allitems];
 xhttp.onreadystatechange = function() {
     if (this.readyState == XMLHttpRequest.DONE && this.status == 200) {
     console.log("made it")
@@ -77,7 +78,7 @@ xhttp.open("GET", responce, true)
 xhttp.send()
 }
 //Declare Display variable
-var disp = [allitems];
+
 //Display Function
 function display(){
 $("#tablebody").empty()
