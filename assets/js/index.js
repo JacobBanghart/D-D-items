@@ -35,7 +35,7 @@ xhttp.open("GET", "mundane.xml", false);
 xhttp.send()
 xhttp.open("GET", "valueableitems.xml", false);
 xhttp.send()*/
-const responce = await fetch("magic.xml")
+let responce = fetch("magic.xml")
 myFunction(responce)
 disp = []
 disp.push(allitems)
