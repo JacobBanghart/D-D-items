@@ -87,7 +87,7 @@ object.text = object.text + "<tr class='title' onclick='showhide(this)'><td  sty
 }
 //XML Tag Handler
 function myFunction(xml) {
-    //var xmlDoc = xml.responseXML;
+    var xmlDoc = xml.responseXML;
     var items = xml.getElementsByTagName("item")
     for(i=0;i<items.length;i++){
      new item(items[i])
