@@ -30,12 +30,12 @@ xhttp.onreadystatechange = function() {
     display()
     }
 };
-/*xhttp.open("GET", "magic.xml", false);
+xhttp.open("GET", "magic.xml", false);
 xhttp.send()
 xhttp.open("GET", "mundane.xml", false);
 xhttp.send()
 xhttp.open("GET", "valueableitems.xml", false);
-xhttp.send()*/
+xhttp.send()
 
 //Filter Function
 $("#filter").keyup(()=>{
@@ -332,11 +332,11 @@ $("#item").change(()=>{
 	display()
 })
 })
-var data = fetch("magic.xml")
+/*var data = fetch("magic.xml")
 .then(response => response.text())
 .then(str=>(new window.DOMParser()).parseFromString(str, "text/xml"))
 .then(data => (myFunction(data)
               disp = [];
               disp.push(allitems);
               display()
-              )
+              )*/
