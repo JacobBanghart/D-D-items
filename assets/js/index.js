@@ -30,11 +30,11 @@ xhttp.onreadystatechange = function() {
     display()
     }
 };
-xhttp.open("GET", "magic.xml", false);
+xhttp.open("GET", "magic.xml", true);
 xhttp.send()
-xhttp.open("GET", "mundane.xml", false);
+xhttp.open("GET", "mundane.xml", true);
 xhttp.send()
-xhttp.open("GET", "valueableitems.xml", false);
+xhttp.open("GET", "valueableitems.xml", true);
 xhttp.send()
 
 //Filter Function
