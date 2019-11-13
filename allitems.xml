@@ -15452,7 +15452,7 @@ items to be within 5 feet of each other. At the end, the pennant is destroyed, a
 		<strength></strength>
 		<stealth></stealth>
 	</item>
-<!--Tales from Yawning Portal-->
+
 	<item>
 		<name>Amulet of Protection from Turning</name>
 		<type>W</type>
@@ -15631,9 +15631,7 @@ items to be within 5 feet of each other. At the end, the pennant is destroyed, a
 		<roll>1d6+1</roll>
 	</item>
 
-</compendium>
-<?xml version="1.0" encoding="UTF-8"?>
-<compendium version="5">
+
 	<item>
 		<name>Copper (cp)</name>
 		<type>$</type>
@@ -18478,9 +18476,6 @@ items to be within 5 feet of each other. At the end, the pennant is destroyed, a
         <text>Source: Curse of Strahd, page 209</text>
     </item>
 
-</compendium>
-<?xml version="1.0" encoding="UTF-8"?>
-<compendium version="5">
 	<item>
 		<name>10 GP - Azurite</name>
 		<type>$</type>
@@ -19481,4 +19476,5 @@ items to be within 5 feet of each other. At the end, the pennant is destroyed, a
 		<text />
 		<text>Source: Dungeon Master's Guide, page 135</text>
 	</item>
+
 </compendium>
